@@ -1,0 +1,30 @@
+.SliderRoot
+    position: relative
+    display: flex
+    align-items: center
+
+    &[data-orientation='vertical']
+        flex-direction: column
+        width: 20px
+        height: 300px
+
+.SliderTrack
+    position: relative
+    flex-grow: 1
+    background: linear-gradient(180deg, rgba(4, 95, 146, 0) 0%, #045F92 100%)
+
+    &[data-orientation='vertical']
+        padding: 80px 60px
+        border-radius: 50px
+
+.SliderRange
+    position: absolute
+    background-color: black
+
+    &[data-orientation='vertical']
+        width: 100%
+
+.SliderThumb
+    display: block
+    width: 20px
+    height: 20px

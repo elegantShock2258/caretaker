@@ -1,0 +1,12 @@
+.thumb {
+  padding: 20px;
+  border-radius: 100%;
+  background: #A6C2D1;
+  font-family: Poppins;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 52.5px;
+  letter-spacing: -0.05em;
+  text-align: center;
+  transform: translateY(-60%);
+}/*# sourceMappingURL=SliderThumb.module.css.map */

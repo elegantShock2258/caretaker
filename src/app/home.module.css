@@ -1,0 +1,30 @@
+.parent {
+  background-image: url("/bg.png");
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.parent .titleContent, .parent .goSlider {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.parent .boldTitle {
+  font-family: Poppins;
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 66px;
+  letter-spacing: -0.05em;
+  text-align: center;
+}
+.parent .title {
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: 275;
+  line-height: 42px;
+  letter-spacing: -0.05em;
+  text-align: center;
+}/*# sourceMappingURL=home.module.css.map */

@@ -3,7 +3,14 @@ import styles from "./home.module.css";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Image from "next/image";
-
+import { Card, CardContent } from "@/components/ui/Card/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+} from "@/components/ui/Carousel/carousel";
 const LocationComponent = () => {
   let [location, setLocation] = useState<{
     city: string | undefined;
@@ -55,9 +62,26 @@ const LocationComponent = () => {
 };
 
 export default function Home() {
+  // fecth the images from backend and show bro
+  const Images = Array(6).fill({
+    image: "/home/cards_backend_sample.png",
+    w: 1000,
+    h: 700,
+  });
   return (
     <div className={styles.parent}>
       <LocationComponent />
+      <Carousel className={styles.carousel}>
+        <CarouselContent>
+          {Images.map((str, i) => (
+            <CarouselItem key={i}>
+              <Card>
+                <CardContent {...str} />
+              </Card>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+      </Carousel>
     </div>
   );
 }

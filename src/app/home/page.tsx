@@ -11,6 +11,7 @@ import {
   CarouselPrevious,
   CarouselNext,
 } from "@/components/ui/Carousel/carousel";
+import DoctorCard from "@/components/ui/DoctorCard/DoctorCard";
 const LocationComponent = () => {
   let [location, setLocation] = useState<{
     city: string | undefined;
@@ -68,6 +69,23 @@ export default function Home() {
     w: 1000,
     h: 700,
   });
+  const Categories = [
+    "/home/brain.png",
+    "/home/heart.png",
+    "/home/eye.png",
+    "/home/legs.png",
+  ];
+  const Doctors = Array(100).fill({
+    image: "/doc.png",
+    w: 170,
+    h: 170,
+    name: "Dr. Ayush Chadha",
+    specialization: "Cardiologist",
+    rating: 4.5,
+    reviews: 100,
+    rate: "40",
+  });
+
   return (
     <div className={styles.parent}>
       <LocationComponent />
@@ -82,6 +100,25 @@ export default function Home() {
           ))}
         </CarouselContent>
       </Carousel>
+      <div className={styles.categories}>
+        <h2>Category</h2>
+        <div className="flex w-full justify-around">
+          {Categories.map((str, i) => (
+            <div className={styles.category} key={i}>
+              <Image src={str} alt="" width={60} height={60} />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className={styles.BestNearYou}>
+        <h2>Best Near You</h2>
+        <div className={styles.docsContainer}>
+          {Doctors.map((doc, i) => {
+            return <DoctorCard doctor={doc} key={i} />;
+          })}
+        </div>
+      </div>
     </div>
   );
 }

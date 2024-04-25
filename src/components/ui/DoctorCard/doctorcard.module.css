@@ -1,0 +1,40 @@
+.card {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Poppins;
+  font-size: 10px;
+  font-weight: 275;
+  line-height: 15px;
+  letter-spacing: -0.05em;
+  text-align: left;
+}
+
+.reviews {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Poppins;
+  font-size: 10px;
+  font-weight: 275;
+  line-height: 15px;
+  letter-spacing: -0.05em;
+  text-align: left;
+}
+
+.name {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  letter-spacing: -0.05em;
+  text-align: left;
+}/*# sourceMappingURL=doctorcard.module.css.map */

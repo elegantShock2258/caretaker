@@ -1,0 +1,21 @@
+.parent {
+  display: grid;
+}
+
+.nav, .children {
+  grid-area: 1/1;
+}
+
+.nav, .dis {
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 40px;
+  pointer-events: fill;
+}
+
+.dis {
+  pointer-events: none;
+}/*# sourceMappingURL=global.css.map */

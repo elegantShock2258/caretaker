@@ -1,5 +1,4 @@
 .card {
-  width: -moz-fit-content;
   width: fit-content;
   display: flex;
   flex-direction: column;
@@ -37,4 +36,6 @@
   line-height: 21px;
   letter-spacing: -0.05em;
   text-align: left;
-}/*# sourceMappingURL=doctorcard.module.css.map */
+}
+
+/*# sourceMappingURL=doctorcard.module.css.map */

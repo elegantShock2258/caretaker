@@ -5,7 +5,7 @@
   justify-content: space-around;
   align-items: center;
   padding: 10px;
-  position: absolute;
+  position: fixed;
   bottom: 20px;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -20,6 +20,4 @@
   border-radius: 100%;
   padding: 10px;
   transform: adjust;
-}
-
-/*# sourceMappingURL=navbar.module.css.map */
+}/*# sourceMappingURL=navbar.module.css.map */

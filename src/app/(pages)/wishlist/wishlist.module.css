@@ -1,0 +1,45 @@
+.parent {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.top {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+  letter-spacing: -0.05em;
+  text-align: center;
+  width: 100%;
+}
+
+.docsContainer {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.cat {
+  display: flex;
+  gap: 30px;
+}
+.cat > div {
+  background-color: white;
+  padding: 2px 7px;
+  border-radius: 5px;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 22.5px;
+  letter-spacing: -0.05em;
+  text-align: center;
+}
+
+.highlight {
+  background-color: #A6C2D1 !important;
+}/*# sourceMappingURL=wishlist.module.css.map */

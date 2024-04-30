@@ -1,12 +1,14 @@
 "use client";
+import { useRouter } from "next/navigation";
 import styles from "./search.module.css";
 
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function Search() {
   const [searchQuery, setSearchQuery] = useState("");
   const [searchHistory, setSearchHistory] = useState<string[]>([]);
-
+  const router = useRouter();
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchQuery(e.target.value);
   };
@@ -18,7 +20,16 @@ export default function Search() {
   return (
     <>
       <div className={styles.parent}>
-        <div className={styles.top}>Search</div>
+        <div className="flex justify-between p-[8px] align-center w-full">
+          <div
+            onClick={() => {
+              router.push("/");
+            }}
+          >
+            <Image src="/backBtn.png" width={30} height={30} alt="" />
+          </div>
+          <div className={styles.top}>Search</div>
+        </div>
         <div className={styles.form}>
           <input
             id="ip"
